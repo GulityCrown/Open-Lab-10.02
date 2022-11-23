@@ -12,6 +12,11 @@ namespace Open_Lab_10._02
         static void Main(string[] args)
         {
             Book LOTR = new Book();
+            LOTR.Title("title: Lord Of The Rings");
+            LOTR.Pages(1172);
+            LOTR.Category("category: epic high-fantasy novel");
+            LOTR.Author("author: J. R. R. Tolkien");
+            LOTR.RelaseDate("relase date: 29. July 1954");
             LOTR.Vypis();
 
         }

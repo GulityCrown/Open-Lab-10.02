@@ -8,44 +8,45 @@ namespace Open_Lab_10._02
 {
     internal class Book
     {
+        private string title;
         private string category;
         private string author;
         private string relaseDate;
-        private string title;
         private int pages;
-        public Book() { }
-        public string Category(string xd)
+
+        public string Title(string xtitle)
         {
-            category = xd;
-            return category;
-        }
-        public string Author(string xdd)
-        {
-            author = xdd;
-            return author;
-        }
-        public string Title(string xddd)
-        {
-            title = xddd;
+            this.title = xtitle;
             return title;
         }
-        public string RelaseDate(string xdddd)
+        public string Category(string xcate)
         {
-            relaseDate = xdddd;
+            this.category = xcate;
+            return category;
+        }
+        public string Author(string xauthor)
+        {
+            this.author = xauthor;
+            return author;
+        }
+        public string RelaseDate(string xrelaseDate)
+        {
+            this.relaseDate = xrelaseDate;
             return relaseDate;
         }
-        public int Pages(int xddddd)
+        public int Pages(int xpages)
         {
-            pages = xddddd;
+            this.pages = xpages;
             return pages;
         }
+
         public void Vypis()
         {
-            Console.WriteLine(Category("Category: Fantasy"));
-            Console.WriteLine(Author("Author: Tolkien"));
-            Console.WriteLine(Title("Title: LOTR"));
-            Console.WriteLine(RelaseDate("Relase Date: 29.7.2005"));
-            Console.WriteLine("numbers of pages: " + Pages(1172));
+            Console.WriteLine(Category(category));
+            Console.WriteLine(Author(author));
+            Console.WriteLine(Title(title));
+            Console.WriteLine(RelaseDate(relaseDate));
+            Console.WriteLine("number of pages: " + Pages(pages));
         }
     }
 }
